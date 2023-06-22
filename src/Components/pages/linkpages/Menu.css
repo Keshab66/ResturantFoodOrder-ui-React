@@ -1,0 +1,86 @@
+
+ img{
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    height: 170px;
+    width: 240px;
+    border-radius:30px 30px 0 0;
+}
+.starter-heading{
+  font-style: italic;
+  font-weight: 400;
+  margin-top:15px;
+  color:  rgb(43, 202, 246) ;
+}
+.restro-menu{
+    display: flex;
+    gap:40px 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.menu-box{
+    
+    height: 350px;
+    width: 240px;
+    padding: 0;
+    margin: 0;
+    border-radius:30px 30px 0 0;
+   background-color: rgb(42, 42, 43);
+   gap: 30px;
+}
+.menu-items{
+padding: 12px;
+ background-color:rgb(116, 184, 125);
+ height: 150px;
+ width: 240px;
+ margin-top: -30px;
+ position: relative;
+ text-align: center;
+ border-radius:50% 50% 10px 10px;
+}
+button {
+    margin: 15px auto;
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: #ffe015;
+    outline: 1px solid yellow;
+    background-color: rgb(36, 36, 35);
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 7px 20px;
+    border: 0px solid #000;   
+    }
+    button.menu-btn {
+        animation: infinite ease-in;
+      }
+      button:hover,
+button:focus {
+  animation: borderPulse 1000ms infinite ease-out, infinite ease-in, hoverShine 200ms;
+}
+
+  /* Declare border pulse animation */
+  @keyframes borderPulse {
+    0% {
+      box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255,.4), 0px 0px 0px 0px rgb(185, 184, 184);
+    }
+    100% {
+      box-shadow: inset 0px 0px 0px 3px rgba(117, 117, 255,.2), 0px 0px 0px 10px rgba(255,255,255,0);
+    }
+  }
+  
+  /* Declare shine on hover animation */
+  @keyframes hoverShine {
+    0%{
+      background-image: linear-gradient(135deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+    }
+    50%{
+      background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 50%, rgba(255,255,255,0) 100%);
+    }
+    100%{
+      background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 100%);
+    }
+  }
+

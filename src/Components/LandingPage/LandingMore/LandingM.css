@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  .row{
+    height: 465px;
+    margin-top: 4px;
+  }
+  #restrocontetnt{
+    height: 990px;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #about-text h2{
+    margin-top: 30px;
+    color: antiquewhite;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  #about-img img {
+   height: 450px;
+   width: 650px;
+  }
+  #about-text .about-heading{
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+     font-style: italic;
+  }
+  .row2{
+    margin-top: 70px;
+  }
+  .column2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column2 #restroCF{
+  margin-left: 220px;
+    width: 430px;
+    height: 550px;
+    border-radius: 100% 100% 0px 0px;
+  }
+  #restroDS{
+    z-index: -9999;
+    margin-top: 330px;
+    margin-left: -700px;
+    width: 400px;
+    height: 230px;
+  }
+ 
+  #about-text .about-heading2{
+    text-align: left;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+ #top-hr{
+    margin-top: 200px;
+   
+ }
+ .circle-bar-header{
+    margin-top: 18px;
+    color: azure;
+    text-align: center;
+ }
+.circle-bar-header{
+  --c: no-repeat linear-gradient(rgb(88, 234, 237) ,rgb(43, 39, 39));
+  background: 
+    var(--c)  calc(-101% + var(--p,0%)) 100% / 50.1% var(--p,.08em),
+    var(--c)  calc( 201% - var(--p,0%)) 0    / 50.1% var(--p,.08em);
+  transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+}
+.circle-bar-header:hover {
+  cursor: pointer;
+  --p: 101%;
+  --t: 0.3s;
+  color: black;
+}
+  .circle-bar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 290px;
+    margin-top: 30px;
+  }
+  .circle {
+    background: rgb(66, 68, 69);
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+}
+#circle1{
+  background-image: url('../../images/restroFD.jpg'); 
+}
+#circle2{
+  background-image: url('../../images/restroMr.jpg');
+}
+#circle3{
+  background-image: url('../../images/restroAB.jpg');   
+}
+#circle1:hover{
+  cursor: pointer; 
+  transition: background-image 0.2s ease;
+}
+#circle2:hover{
+  cursor: pointer; 
+}
+#circle3:hover{
+  cursor: pointer;
+}
+ /* a h1{
+    position: relative;
+    color: rgb(243, 243, 245);
+    font-weight: 600;
+    text-align: center;
+    margin-top:120px;
+} */
+.bottom-routes{
+  position: relative;
+    color: rgb(243, 243, 245);
+    font-weight: 600;
+    text-align: center;
+    margin-top:120px;
+    margin-left: 70px;
+}
+#circle1:hover{
+transition: background-image 0.2s ease-in-out;
+}
